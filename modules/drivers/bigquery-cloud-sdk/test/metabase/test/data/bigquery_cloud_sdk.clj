@@ -123,7 +123,7 @@
         respond                       (fn [_ rows]
                                         (ffirst rows))
         client                        (bigquery)
-        ^TableResult query-response   (#'bigquery/execute-bigquery client sql [])]
+        ^TableResult query-response   (#'bigquery/execute-bigquery client sql [] nil nil)]
     (#'bigquery/post-process-native (test-db-details) respond query-response)))
 
 (defprotocol ^:private Insertable
