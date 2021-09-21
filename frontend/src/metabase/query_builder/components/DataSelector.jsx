@@ -668,7 +668,7 @@ export class UnconnectedDataSelector extends Component {
     });
 
   renderActiveStep() {
-    const { combineDatabaseSchemaSteps, hasTableSearch } = this.props;
+    const { combineDatabaseSchemaSteps } = this.props;
     const props = {
       ...this.state,
 
@@ -681,7 +681,7 @@ export class UnconnectedDataSelector extends Component {
       isLoading: this.state.isLoading,
       hasNextStep: !!this.getNextStep(),
       onBack: this.getPreviousStep() ? this.previousStep : null,
-      hasFiltering: !hasTableSearch,
+      hasFiltering: true,
     };
 
     switch (this.state.activeStep) {
