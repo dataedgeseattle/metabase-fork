@@ -97,6 +97,28 @@ export default class DashCard extends Component {
     e.stopPropagation();
   };
 
+  renderFooter() {
+    return (
+      <div className="inline-block">
+      TEST2
+      </div>
+    );
+  }
+
+  renderHeader() {
+    return (
+      <div className="SetupHelp bordered border-dashed p2 rounded mb4">
+        {t`If you feel stuck`},{" "}
+        <ExternalLink
+          className="link"
+          href={MetabaseSettings.docsUrl("setting-up-metabase")}
+          target="_blank"
+        >{t`our getting started guide`}</ExternalLink>{" "}
+        {t`is just a click away.`}
+      </div>
+    );
+  }
+
   render() {
     const {
       dashcard,
@@ -229,17 +251,7 @@ export default class DashCard extends Component {
               : { width: dashcard.sizeX, height: dashcard.sizeY }
           }
           actionButtons={
-            isEmbed ? (
-              <QueryDownloadWidget
-                className="m1 text-brand-hover text-light"
-                classNameClose="hover-child"
-                card={dashcard.card}
-                params={parameterValuesBySlug}
-                dashcardId={dashcard.id}
-                token={dashcard.dashboard_id}
-                icon="download"
-              />
-            ) : null
+            isEmbed ? null : null
           }
           onUpdateVisualizationSettings={
             this.props.onUpdateVisualizationSettings

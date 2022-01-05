@@ -1,11 +1,19 @@
 import { t } from "ttag";
 
+// const greetingPrefixes = [
+//  t`Hey there`,
+//  t`How's it going`,
+//  t`Howdy`,
+//  t`Greetings`,
+//  t`Good to see you`,
+//];
+
 const greetingPrefixes = [
-  t`Hey there`,
-  t`How's it going`,
-  t`Howdy`,
-  t`Greetings`,
-  t`Good to see you`,
+  t`Welcome to EarningsChart`,
+  t`Welcome to EarningsChart`,
+  t`Welcome to EarningsChart`,
+  t`Welcome to EarningsChart`,
+  t`Welcome to EarningsChart`,
 ];
 
 const subheadPrefixes = [

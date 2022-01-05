@@ -4,15 +4,21 @@ import _ from "underscore";
 
 const componentStack = [];
 
+//here
 const SEPARATOR = " · ";
 
+//const updateDocumentTitle = _.debounce(() => {
+//  document.title = componentStack
+//    .map(component => component._documentTitle)
+//    .filter(title => title)
+//    .reverse()
+//    .join(SEPARATOR);
+//});
+
 const updateDocumentTitle = _.debounce(() => {
-  document.title = componentStack
-    .map(component => component._documentTitle)
-    .filter(title => title)
-    .reverse()
-    .join(SEPARATOR);
+  document.title = "EarningsChart";
 });
+
 
 const title = documentTitleOrGetter => ComposedComponent =>
   class extends React.Component {

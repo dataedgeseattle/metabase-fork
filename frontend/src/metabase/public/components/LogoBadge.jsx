@@ -10,15 +10,15 @@ type Props = {
 
 const LogoBadge = ({ dark }: Props) => (
   <ExternalLink
-    href="https://metabase.com/"
+    href="https://earningschart.org/"
     target="_blank"
     className="h4 flex text-bold align-center no-decoration"
   >
-    <LogoIcon height={28} dark={dark} />
+
     <span className="text-small">
-      <span className="ml1 md-ml2 text-medium">{jt`Powered by ${(
+      <span className="ml1 md-ml2 text-medium">{jt` ${(
         <span className={dark ? "text-white" : "text-brand"}>
-          {t`Metabase`}
+          {t` `}
         </span>
       )}`}</span>
     </span>

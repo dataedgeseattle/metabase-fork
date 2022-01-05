@@ -178,7 +178,7 @@ export default class Navbar extends Component {
               data-metabase-event={"Navbar;Logo"}
               className="NavItem cursor-pointer flex align-center"
             >
-              <LogoIcon className="text-brand my2" />
+             <LogoIcon className="text-brand my2" />
             </Link>
           </li>
         </ul>

@@ -6,7 +6,7 @@ import {
 import Scalar from "./visualizations/Scalar";
 import SmartScalar from "./visualizations/SmartScalar";
 import Progress from "./visualizations/Progress";
-import Table from "./visualizations/Table";
+// import Table from "./visualizations/Table";
 import Text from "./visualizations/Text";
 import LineChart from "./visualizations/LineChart";
 import BarChart from "./visualizations/BarChart";
@@ -20,14 +20,14 @@ import ScatterPlot from "./visualizations/ScatterPlot";
 import Funnel from "./visualizations/Funnel";
 import Gauge from "./visualizations/Gauge";
 import ObjectDetail from "./visualizations/ObjectDetail";
-import PivotTable from "./visualizations/PivotTable";
+// import PivotTable from "./visualizations/PivotTable";
 
 export default function() {
   registerVisualization(Scalar);
   registerVisualization(SmartScalar);
   registerVisualization(Progress);
   registerVisualization(Gauge);
-  registerVisualization(Table);
+  // registerVisualization(Table);
   registerVisualization(Text);
   registerVisualization(LineChart);
   registerVisualization(AreaChart);
@@ -40,6 +40,6 @@ export default function() {
   registerVisualization(MapViz);
   registerVisualization(Funnel);
   registerVisualization(ObjectDetail);
-  registerVisualization(PivotTable);
-  setDefaultVisualization(Table);
+  // registerVisualization(PivotTable);
+  setDefaultVisualization(BarChart);
 }

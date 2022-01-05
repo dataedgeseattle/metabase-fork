@@ -374,24 +374,40 @@ export default class DashboardHeader extends Component {
     return [buttons];
   }
 
+  renderFooter() {
+    return (
+      <div className="SetupHelp bordered border-dashed p2 rounded mb4">
+        {t`If you feel stuck`},{" "}
+        <ExternalLink
+          className="link"
+          href={MetabaseSettings.docsUrl("setting-up-metabase")}
+          target="_blank"
+        >{t`our getting started guide`}</ExternalLink>{" "}
+        {t`is just a click away.`}
+      </div>
+    );
+  }
+
   render() {
     const { dashboard } = this.props;
 
     return (
+      <div>
       <Header
-        headerClassName="wrapper"
-        objectType="dashboard"
-        analyticsContext="Dashboard"
-        item={dashboard}
-        isEditing={this.props.isEditing}
-        hasBadge={!this.props.isEditing && !this.props.isFullscreen}
-        isEditingInfo={this.props.isEditing}
-        headerButtons={this.getHeaderButtons()}
-        editWarning={this.getEditWarning(dashboard)}
-        editingTitle={t`You're editing this dashboard.`}
-        editingButtons={this.getEditingButtons()}
-        setItemAttributeFn={this.props.setDashboardAttribute}
-      />
+          headerClassName="wrapper"
+          objectType="dashboard"
+          analyticsContext="Dashboard"
+          item={dashboard}
+          isEditing={this.props.isEditing}
+          hasBadge={!this.props.isEditing && !this.props.isFullscreen}
+          isEditingInfo={this.props.isEditing}
+          headerButtons={this.getHeaderButtons()}
+          editWarning={this.getEditWarning(dashboard)}
+          editingTitle={t`You're editing this dashboard.`}
+          editingButtons={this.getEditingButtons()}
+          setItemAttributeFn={this.props.setDashboardAttribute}
+        />
+      </div>
     );
   }
 }
