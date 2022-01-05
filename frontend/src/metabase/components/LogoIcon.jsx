@@ -25,8 +25,10 @@ class DefaultLogoIcon extends Component {
         fill="currentcolor"
         title="EC"
       >
-      <text x="120" y="105" class="heavy">EC</text>
-    </svg>
+        <text x="120" y="105" class="heavy">
+          EC
+        </text>
+      </svg>
     );
   }
 }

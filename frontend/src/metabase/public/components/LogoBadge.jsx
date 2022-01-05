@@ -14,12 +14,9 @@ const LogoBadge = ({ dark }: Props) => (
     target="_blank"
     className="h4 flex text-bold align-center no-decoration"
   >
-
     <span className="text-small">
       <span className="ml1 md-ml2 text-medium">{jt` ${(
-        <span className={dark ? "text-white" : "text-brand"}>
-          {t` `}
-        </span>
+        <span className={dark ? "text-white" : "text-brand"}>{t` `}</span>
       )}`}</span>
     </span>
   </ExternalLink>

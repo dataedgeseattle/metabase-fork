@@ -98,11 +98,7 @@ export default class DashCard extends Component {
   };
 
   renderFooter() {
-    return (
-      <div className="inline-block">
-      TEST2
-      </div>
-    );
+    return <div className="inline-block">TEST2</div>;
   }
 
   renderHeader() {
@@ -250,9 +246,7 @@ export default class DashCard extends Component {
               ? undefined
               : { width: dashcard.sizeX, height: dashcard.sizeY }
           }
-          actionButtons={
-            isEmbed ? null : null
-          }
+          actionButtons={isEmbed ? null : null}
           onUpdateVisualizationSettings={
             this.props.onUpdateVisualizationSettings
           }

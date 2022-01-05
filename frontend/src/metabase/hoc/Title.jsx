@@ -19,7 +19,6 @@ const updateDocumentTitle = _.debounce(() => {
   document.title = "EarningsChart";
 });
 
-
 const title = documentTitleOrGetter => ComposedComponent =>
   class extends React.Component {
     static displayName =

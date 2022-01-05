@@ -143,7 +143,7 @@ export default class PublicDashboard extends Component {
       : [];
 
     return (
-    <EmbedFrame
+      <EmbedFrame
         name={dashboard && dashboard.name}
         description={dashboard && dashboard.description}
         dashboard={dashboard}
@@ -154,7 +154,7 @@ export default class PublicDashboard extends Component {
           buttons.length > 0 && <div className="flex">{buttons}</div>
         }
       >
-          <LoadingAndErrorWrapper
+        <LoadingAndErrorWrapper
           className={cx("Dashboard p1 flex-full", {
             "Dashboard--fullscreen": isFullscreen,
             "Dashboard--night": isNightMode,

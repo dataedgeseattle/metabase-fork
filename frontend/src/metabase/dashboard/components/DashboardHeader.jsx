@@ -393,7 +393,7 @@ export default class DashboardHeader extends Component {
 
     return (
       <div>
-      <Header
+        <Header
           headerClassName="wrapper"
           objectType="dashboard"
           analyticsContext="Dashboard"
