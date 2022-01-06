@@ -67,6 +67,12 @@ export default class ProfileLink extends Component {
         event: `Navbar;Profile Dropdown;Activity ${tag}`,
       },
       {
+        title: t`About EarningsChart`,
+        icon: null,
+        action: () => this.openModal("about"),
+        event: `Navbar;Profile Dropdown;About ${tag}`,
+      },
+      {
         title: t`Sign out`,
         icon: null,
         link: "auth/logout",
@@ -105,7 +111,7 @@ export default class ProfileLink extends Component {
               <h2
                 style={{ fontSize: "1.75em" }}
                 className="text-dark"
-              >{t`Thanks for using Metabase!`}</h2>
+              >{t`Thanks for using EarningsChart! A fork of Metabase`}</h2>
               <div className="pt2">
                 <h3 className="text-dark mb1">
                   {t`You're on version`} {tag}

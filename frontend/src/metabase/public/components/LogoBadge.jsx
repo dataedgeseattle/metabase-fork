@@ -15,8 +15,10 @@ const LogoBadge = ({ dark }: Props) => (
     className="h4 flex text-bold align-center no-decoration"
   >
     <span className="text-small">
-      <span className="ml1 md-ml2 text-medium">{jt` ${(
-        <span className={dark ? "text-white" : "text-brand"}>{t` `}</span>
+    <span className="ml1 md-ml2 text-medium">{jt`Powered by ${(
+       <span className={dark ? "text-white" : "text-brand"}>
+          {t`Metabase`}
+       </span>
       )}`}</span>
     </span>
   </ExternalLink>
