@@ -17,14 +17,21 @@ class DefaultLogoIcon extends Component {
   render() {
     const { dark, height, width } = this.props;
     return (
-
-      <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-       width="50.000000pt" height="50.000000pt" viewBox="0 0 128.000000 128.000000"
-       preserveAspectRatio="xMidYMid meet">
-
-      <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
-      fill="#000000" stroke="none">
-      <path d="M181 1239 c-116 -84 -104 -242 23 -299 l39 -18 -39 -22 c-21 -11 -56
+      <svg
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="50.000000pt"
+        height="50.000000pt"
+        viewBox="0 0 128.000000 128.000000"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <g
+          transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
+          fill="#000000"
+          stroke="none"
+        >
+          <path
+            d="M181 1239 c-116 -84 -104 -242 23 -299 l39 -18 -39 -22 c-21 -11 -56
       -32 -78 -44 l-39 -24 28 -18 c43 -28 127 -31 171 -5 21 13 34 16 31 9 -3 -7
       -19 -49 -37 -92 l-32 -80 23 -18 c119 -93 168 -152 200 -244 19 -54 19 -54 -2
       -97 -26 -50 -29 -129 -6 -172 33 -64 112 -115 177 -115 65 0 144 51 177 115
@@ -38,10 +45,10 @@ class DefaultLogoIcon extends Component {
       48 -31 74 -48z m384 -14 c-21 -40 -66 -58 -106 -42 -16 7 -30 15 -30 19 0 3
       33 27 73 53 71 47 72 47 75 24 2 -14 -4 -38 -12 -54z m-236 -457 c30 0 65 4
       78 8 18 7 22 5 22 -13 0 -29 -26 -77 -49 -90 -25 -13 -77 -13 -102 0 -23 13
-      -49 61 -49 90 0 18 4 20 23 13 12 -4 47 -8 77 -8z"/>
-      </g>
+      -49 61 -49 90 0 18 4 20 23 13 12 -4 47 -8 77 -8z"
+          />
+        </g>
       </svg>
-
     );
   }
 }

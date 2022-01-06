@@ -245,7 +245,7 @@ const VizTableToggle = ({
   const vizIcon = getIconForVisualizationType(question.display());
   return (
     <Well className={className} onClick={() => onShowTable(!isShowingRawTable)}>
-     <ToggleIcon active={isShowingRawTable}>
+      <ToggleIcon active={isShowingRawTable}>
         <Icon name="table2" />
       </ToggleIcon>
       <ToggleIcon active={!isShowingRawTable}>
